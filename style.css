@@ -25,3 +25,66 @@ body {
   width: 100%;
   display: block;
 }
+
+.contacts-container {
+  margin: 60px 40px 0 30px;
+}
+
+.contacts-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.contacts-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts-link svg{
+  fill: white;
+  margin-right: 10px;
+}
+
+.contact-list li a:hover, .contact-list li a:focus{
+  color: #ff6b08;
+  fill:#ff6b08;
+}
+
+.contact-list li a svg:hover, .contact-list li a svg:focus{
+  fill: #ff6b08;
+}
+
+.contact-list{
+  padding-left: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.skills-container {
+  margin: 55px 40px 0 40px;
+}
+
+.skills-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.skills-list li {
+  margin-left: 15px;
+  color: #ff6b08;
+}
+
+.skills-list li span {
+  color: #e2e4e6;
+}
