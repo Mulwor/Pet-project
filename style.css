@@ -88,6 +88,11 @@ body {
 .skills-list li span {
   color: #e2e4e6;
 }
+
+.about-me-container {
+  padding: 110px 90px;
+}
+
 .profession {
   font-size: 14px;
   font-weight: 700;
@@ -216,7 +221,6 @@ section {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
-
   margin: 55px 0 20px 0;
 }
 
@@ -227,30 +231,6 @@ section {
 
 .specialization {
   margin-bottom: 15px;
-}
-
-/*Footer*/
-
-footer{
-  position: absolute;
-  left: 0;
-  bottom:0;
-  width: 100%;
-
-  padding-left: 55px;
-  padding-right: 55px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.github-logo{
-  fill:white;
-}
-
-.github-link:hover svg, .github-link:focus svg{
-  fill: #ff6b08;
 }
 
 
@@ -271,8 +251,8 @@ footer{
   }
 }
 
-/*Styles for tablet*/
 
+/*Styles for tablet*/
 @media screen and (min-width: 768px) and (max-width: 1199px){
 
   .wrapper{
@@ -297,12 +277,6 @@ footer{
   .about-me-container {
     padding: 70px 50px;
   }
-
-  .code{
-    width: 100%;
-  }
-
-
 }
 
 /*Styles for phone*/
@@ -380,131 +354,8 @@ footer{
     padding: 0 25px;
   }
 
-  .header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 50;
-  }
-  
-  .header::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1e2939;
-    z-index: 2;
-  }
-  
-  .header-body{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    align-items: center;
-  }
-  
-  .header-logo{
-    flex: 0 0 40px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    z-index: 3;
-  }
-  
-  .header-logo img{
-    max-width: 100%;
-    display: block;
-  }
-  
-  .header-list{
-    display: block;
-    position: relative;
-  }
-  
-  .header-list li{
-    color: #ff6b08;
-    margin: 0 0 10px 0;
-  }
-  
-  .header-link{
-    color: #ffffff;
-    font-size: 16px;
-    text-decoration: none;
-  }
-
-
   body.lock{
     overflow: hidden;
-  }
-
-  .header-menu{
-    position: fixed;
-    top:-100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1e2939;
-    padding: 90px 10px 20px 85px;
-    transition: all 0.3s ease 0s;
-    overflow: auto;
-  }
-
-  .header-menu.active{
-    top: 0;
-  }
-
-  .header-burger{
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 20px;
-    z-index: 3;
-  }
-
-  .header-burger span{
-    position: absolute;
-    background-color: white;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    top: 9px;
-    transition: all 0.3s ease 0s;
-  }
-
-  .header-burger::before, .header-burger::after{
-    content: '';
-    background-color:white;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    transition: all 0.3s ease 0s;
-  }
-
-  .header-burger::before{
-    top: 0;
-  }
-
-  .header-burger::after{
-    bottom: 0;
-  }
-
-  .header-burger.active::before{
-    transform: rotate(45deg);
-    top: 9px;
-  }
-
-  .header-burger.active::after{
-    transform: rotate(-45deg);
-    bottom: 9px;
-  }
-
-  .header-burger.active span{
-    transform: scale(0);
   }
 
   .skills-list li span{
