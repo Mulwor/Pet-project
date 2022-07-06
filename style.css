@@ -120,7 +120,7 @@ body {
 .projects {
 	display: flex;	
 	justify-content: center;
-	column-gap: 30px;
+	column-gap: 88px;
 	flex-wrap: wrap;
 }
 
